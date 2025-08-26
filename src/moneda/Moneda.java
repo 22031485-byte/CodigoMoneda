@@ -11,6 +11,7 @@ public class Moneda {
         System.out.println("Ingresa 0 para terminar.");
 
         while (true) {
+            cajero.mostrarDisponibilidad();
             System.out.print("Euros: ");
             int cantidad = leer.nextInt();
 
@@ -26,8 +27,8 @@ public class Moneda {
 
             cajero.setCantidad(cantidad);
             System.out.println("Desglose:");
-            cajero.Cambio();  // Esto ya imprime el desglose
-            System.out.println(); // Línea vacía para separar cada resultado
+            cajero.Cambio();
+            System.out.println();
         }
 
         leer.close();
